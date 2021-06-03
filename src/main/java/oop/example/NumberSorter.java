@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class NumberSorter {
     Scanner input = new Scanner(System.in);
+
     public double [] get3Numbers(){
         double number;
         int numberCount = 0;
@@ -30,6 +31,20 @@ public class NumberSorter {
         } while (numberCount<3);
 
         return gather;
+    }
+
+    public double sortArray(double [] numArray3){
+        double largestNumber;
+        if(numArray3[0]>numArray3[1]){
+            largestNumber = numArray3[0];
+        }else{
+            largestNumber = numArray3[1];
+        }
+
+        if (!(largestNumber > numArray3[2])) {
+            largestNumber = numArray3[2];
+        }
+        return largestNumber;
 
     }
 }
