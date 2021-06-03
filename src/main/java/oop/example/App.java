@@ -30,7 +30,11 @@ public class App
 {
     public static void main( String[] args )
     {
-
+        NumberSorter myNumbers = new NumberSorter();
+        double [] myArray = myNumbers.get3Numbers();
+        System.out.println("First number: "+myArray[0]);
+        System.out.println("Second number: "+myArray[1]);
+        System.out.println("Third number: "+myArray[2]);
 
     }
 }
